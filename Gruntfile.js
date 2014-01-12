@@ -19,6 +19,14 @@ module.exports = function (grunt) {
             app: 'app',
             dist: 'dist'
         },
+        css_url_replace: {
+            options: {
+              staticRoot: 'app'
+            },
+            files: {
+              'dest/build.css': ['styles/main.css']
+            }
+        },
         watch: {
             compass: {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
@@ -167,7 +175,7 @@ module.exports = function (grunt) {
                     src: [
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
-                        '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
+                        // '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
                         '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
                     ]
                 }
@@ -330,4 +338,6 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
+
+    grunt.loadNpmTasks('grunt-css-url-replace');
 };
