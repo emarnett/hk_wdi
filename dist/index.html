@@ -11,7 +11,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <link rel="stylesheet" href="styles/af58f82d.main.css"/>
+  <link rel="stylesheet" href="styles/7d8c8212.main.css"/>
 </head>
 <body>
   <!--[if lt IE 10]>
@@ -113,51 +113,73 @@
           <!-- Three rows, Four columns of students below the image -->
           <div class="row" id="students-row-1">
             <div class="col-sm-3 student" data-name="Bruno" data-toggle="modal" data-target="#myModal">
-              <img class="img-circle" src="images/person.jpg" alt="Generic placeholder image">
+              <div class="stud-img">
+                <img src="images/bruno.jpg" alt="Generic placeholder image" style="position: relative;height: 200px;width: 150px;right: 25px">
+              </div>
               <h2>Bruno Wu</h2>
             </div><!-- /.col-lg-3 -->
             <div class="col-sm-3 student" data-name="Deepak" data-toggle="modal" data-target="#myModal">
-              <img class="img-circle" src="images/person.jpg" alt="Generic placeholder image">
+              <div class="stud-img">
+                <img class="img-circle" src="images/person.jpg" alt="Generic placeholder image">
+              </div>
               <h2>Deepak Jayakumaran</h2>
             </div><!-- /.col-lg-3 -->
             <div class="col-sm-3 student" data-name="Emily" data-toggle="modal" data-target="#myModal">
-              <img id="emily-avatar" class="img-circle" src="images/emily.jpg" alt="Generic placeholder image">
+              <div class="stud-img">
+                <img src="images/emily.jpg" alt="Generic placeholder image" style="height: 160px;width: 160px;position: relative;right: 50px">
+              </div>
               <h2>Emily Arnett</h2>
             </div><!-- /.col-lg-3 -->
             <div class="col-sm-3 student" data-name="Jin" data-toggle="modal" data-target="#myModal">
-              <img class="img-circle" src="images/person.jpg" alt="Generic placeholder image">
+              <div class="stud-img">
+              <img src="images/jin.jpg" alt="Generic placeholder image" style="position: relative;height: 150px;width: 130px;right: 10px">
+              </div>
               <h2>Hyejin Yang</h2>
             </div><!-- /.col-lg-3 -->
           </div><!-- /.row -->
           <div class="row" id="students-row-2">
             <div class="col-sm-3 student" data-name="Ian" data-toggle="modal" data-target="#myModal">
+              <div class="stud-img">
               <img class="img-circle" src="images/person.jpg" alt="Generic placeholder image">
+              </div>
               <h2>Ian O'Connor</h2>
             </div><!-- /.col-lg-3 -->
             <div class="col-sm-3 student" data-name="Josiah" data-toggle="modal" data-target="#myModal">
+              <div class="stud-img">
               <img class="img-circle" src="images/gFMNHyA.gif" alt="Generic placeholder image">
+              </div>
               <h2>Josiah Hatch</h2>
             </div><!-- /.col-lg-3 -->  
             <div class="col-sm-3 student" data-name="Karen" data-toggle="modal" data-target="#myModal">
+              <div class="stud-img">
               <img class="img-circle" src="images/person.jpg" alt="Generic placeholder image">
+              </div>
               <h2>Karen Farzam</h2>
             </div><!-- /.col-lg-3 -->
             <div class="col-sm-3 student" data-name="Kingsley" data-toggle="modal" data-target="#myModal">
+              <div class="stud-img">
               <img class="img-circle" src="images/person.jpg" alt="Generic placeholder image">
+              </div>
               <h2>Kingsley Man</h2>
             </div><!-- /.col-lg-3 -->
           </div><!-- /.row -->
           <div class="row" id="students-row-3">
             <div class="col-sm-3 student" data-name="Robyn" data-toggle="modal" data-target="#myModal">
+              <div class="stud-img">
               <img class="img-circle" src="images/robyn.jpg" alt="Generic placeholder image">
+              </div>
               <h2>Robyn Steinberg</h2>
             </div><!-- /.col-lg-3 -->
             <div class="col-sm-3 student" data-name="Sophia" data-toggle="modal" data-target="#myModal">
+              <div class="stud-img">
               <img class="img-circle" src="images/person.jpg" alt="Generic placeholder image">
+              </div>
               <h2>Sophia Raji</h2>
             </div><!-- /.col-lg-3 -->
             <div class="col-sm-3 student" data-name="Steph" data-toggle="modal" data-target="#myModal">
+              <div class="stud-img">
               <img class="img-circle" src="images/person.jpg" alt="Generic placeholder image">
+              </div>
               <h2>Stephanie Siaw</h2>
             </div><!-- /.col-lg-3 -->
           </div><!-- /.row -->
@@ -175,10 +197,10 @@
                   <div class="col-sm-5">
                     <div class="row">
                       <div class="row">
-                        <div class="col-sm-8">
+                        <div class="col-sm-6" style="padding-right:0">
                           <h4 style="text-align:left" id="modal-name"></h4>
                         </div>
-                        <div class="col-sm-4" style="padding-top:10px;padding-left:0">
+                        <div class="col-sm-6" style="padding-top:10px;padding-left:0;text-align:right">
                           <em>From: <span id="modal-country"></span></em>
                         </div>
                       </div>
@@ -204,32 +226,36 @@
             <h1>Our Projects</h1>
             <div class="row">
               <div class="col-sm-4">
-                <img src="images/website.png" alt="Generic placeholder image">
-                <h2>Website</h2>
+                <a href="http://karenzam.github.io/profileme/">
+                  <img src="images/karenSite.png" alt="Generic placeholder image">
+                  <h2>Karen's Profile</h2>
+                </a>
               </div><!-- /.col-sm-4 -->
+              <div class="col-sm-4">
+                <a href="http://jinyy.herokuapp.com/">
+                  <img src="images/jinSite.png" alt="Generic placeholder image">
+                  <h2>Jin's Profile</h2>
+                </a>
+              </div> <!-- /.col-sm-4 
               <div class="col-sm-4">
                 <img src="images/website.png" alt="Generic placeholder image">
                 <h2>Website</h2>
-              </div><!-- /.col-sm-4 -->
-              <div class="col-sm-4">
-                <img src="images/website.png" alt="Generic placeholder image">
-                <h2>Website</h2>
-              </div><!-- /.col-sm-4 -->
+              </div> /.col-sm-4 -->
             </div><!-- /.row -->
-            <div class="row">
+            <!-- div class="row">
               <div class="col-sm-4">
                 <img class="img-thumbnail" src="images/website.png" alt="Generic placeholder image">
                 <h2>Website</h2>
-              </div><!-- /.col-sm-4 -->
+              </div> /.col-sm-4 
               <div class="col-sm-4">
                 <img class="img-thumbnail" src="images/website.png" alt="Generic placeholder image">
                 <h2>Website</h2>
-              </div><!-- /.col-sm-4 -->
+              </div> /.col-sm-4 
               <div class="col-sm-4">
                 <img class="img-thumbnail" src="images/website.png" alt="Generic placeholder image">
                 <h2>Website</h2>
-              </div><!-- /.col-sm-4 -->
-            </div><!-- /.row -->
+              </div> /.col-sm-4 
+            </div> /.row - -->
           </div>
         </div>
       </div>
@@ -275,7 +301,7 @@
 
   <script src="https://code.jquery.com/jquery.js"></script>
 
-  <script src="scripts/db2a8ca4.main.js"></script>
+  <script src="scripts/d607da02.main.js"></script>
 
  
 
