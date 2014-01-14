@@ -467,3 +467,9 @@ h4 {
     margin-top: 120px;
   }
 }
+
+.end {
+  height: 1000px;
+  background: url('../images/class.jpg') fixed center;
+  background-size: cover;
+}
